@@ -1,26 +1,25 @@
-@Searching
 Feature: As a potential client i need to search in google to find a web site
 
-
-  Scenario: The client search by "Crowdar Academy"
+  @Smoke
+  Scenario: The client search by "crowdar"
     Given The client is on google page
-    When The client search for word Crowdar Academy
+    When The client search for word crowdar
     Then The client verify that results are shown properly
 
-
-  Scenario: The client search by "Calidad"
+  @Smoke
+  Scenario: The client search by "Automation"
     Given The client is on google page
-    When The client search for word Calidad
+    When The client search for word Automation
     Then The client verify that results are shown properly
 
-
-  Scenario: The client search by "Software"
+  @Smoke
+  Scenario: The client search by "Docker"
     Given The client is on google page
-    When The client search for word Software
+    When The client search for word Docker
     Then The client verify that results are shown properly
 
-
-  Scenario: The client search by "Testing"
-    Given The client is on google page
-    When The client search for word Testing
+  @Smoke
+  Scenario: The client search by "Lippia"
+    Given The client isn't on google page
+    When The client search for word Lippia
     Then The client verify that results are shown properly
